@@ -27,6 +27,7 @@ img {
 
 #main-content {
     height: 100%;
+    display: flex;
 }
 
 /********************************************************
@@ -51,6 +52,10 @@ img {
 
 .active {
     color: var(--textColorActive);
+}
+
+.btn {
+    border: none;
 }
 
 /********************************************************
@@ -84,4 +89,29 @@ aside svg {
     width: 40px;
 }
 
-/* !SECTION ASIDE END ***************************************/
+/* !SECTION ASIDE END */
+
+
+/* SECTION TOPBAR ***************************************/
+
+#topbar {
+    background-color: var(--topbarColor);
+    height: 80px;
+    width: 100%;
+    justify-content: end;
+    align-items: center;
+}
+
+.btn-upgrade {
+    height: 40px;
+    padding-inline: 30px;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    background-color: var(--topbarColor);
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+
+/* !SECTION TOPBAR END */
