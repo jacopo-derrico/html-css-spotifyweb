@@ -55,7 +55,7 @@ img {
     padding-inline: 20px;
 }
 
-.active {
+.active-text {
     color: var(--textColorActive);
 }
 
@@ -85,14 +85,107 @@ aside {
     padding-block: 20px;
     flex-direction: column;
     justify-content: space-between;
+    overflow: hidden;
+}
+
+aside figure {
+    margin-bottom: 30px;
 }
 
 aside img {
     width: 60%;
 }
 
-aside svg {
-    width: 40px;
+#side-menu svg {
+    width: 25px;
+    margin-right: 5px;
+}
+
+#side-menu a {
+    align-items: center;
+    font-size: 12px;
+}
+
+#side-menu li {
+    margin-block: 15px;
+}
+
+li:has(> a.active-text) {
+    border-left: 4px solid var(--accentColor);
+}
+
+li>.active-text {
+    margin-left: -4px;
+}
+
+#playlist-menu {
+    margin-top: 30px;
+    overflow: scroll;
+}
+
+#playlist-menu h4 {
+    text-transform: uppercase;
+    color: var(--textColorActive);
+}
+
+.btn-create-playlist {
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: capitalize;
+    color: var(--textColor);
+    background-color: var(--asideColor);
+    height: 35px;
+    align-items: center;
+    margin-block: 10px;
+}
+
+.btn-create-playlist span {
+    background-color: var(--textColor);
+    color: var(--asideColor);
+    font-size: 30px;
+    width: 35px;
+    display: block;
+    margin-right: 10px;
+}
+
+#playlist-menu li {
+    margin-block: 15px;
+    text-transform: capitalize;
+    font-size: 12px;
+}
+
+.btn-download {
+    color: var(--textColor);
+    background-color: var(--asideColor);
+    width: 100%;
+    font-weight: 700;
+    align-items: center;
+}
+
+.btn-download svg {
+    width: 20px;
+    margin-right: 10px;
+}
+
+aside hr {
+    margin-block: 10px;
+    border: 0.5px solid var(--textColor);
+}
+
+.btn-profile {
+    background-color: var(--asideColor);
+    color: var(--textColorActive);
+    font-size: 16px;
+    font-weight: 800;
+    align-items: center;
+}
+
+.btn-profile svg {
+    background-color: var(--textColor);
+    border-radius: 15px;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
 }
 
 /* !SECTION ASIDE END */
