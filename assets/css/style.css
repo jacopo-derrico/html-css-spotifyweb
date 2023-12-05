@@ -3,3 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --textColor: #717171;
+    --textColorActive: #fff;
+    --asideColor: #000;
+    --topbarColor: #090B12;
+    --mainSectionColor: #141922;
+    --playerColor: #282828;
+    --accentColor: #B9FF34;
+}
