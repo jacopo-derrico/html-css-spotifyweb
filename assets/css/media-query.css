@@ -1,0 +1,22 @@
+/* TABLET MD 768px *****************************************/
+
+@media screen and (max-width: 768px) {
+
+    .album {
+        width: calc((100% / 4) - 20px + (20px / 4));
+    }
+}
+
+/* MOBILE SM 576px *****************************************/
+
+@media screen and (max-width: 576px) {
+
+    .album {
+        width: calc((100% / 2) - 20px + (20px / 2));
+    }
+}
+}
+
+/* MOBILE XS 425px *****************************************/
+
+@media screen and (max-width: 425px) {}
