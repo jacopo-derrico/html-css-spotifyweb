@@ -14,6 +14,7 @@
     --accentColor: #B9FF34;
 
     --asideWidth: 220px;
+    --asideWidthXS: 50px;
     --topbarHeight: 80px;
     --playerHeight: 80px;
 }
@@ -61,6 +62,10 @@ img {
 
 .btn {
     border: none;
+}
+
+.visible-xs {
+    display: none;
 }
 
 /********************************************************
