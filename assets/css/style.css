@@ -8,7 +8,7 @@
     --textColor: rgba(255, 255, 255, 0.544);
     --textColorActive: #fff;
     --asideColor: #000;
-    --topbarColor: #090B12;
+    --topbarColor: rgba(9, 11, 18, 0.5);
     --mainSectionColor: #141922;
     --playerColor: #282828;
     --accentColor: #B9FF34;
@@ -18,7 +18,7 @@
     --playerHeight: 80px;
 }
 
-body {
+.web-app {
     height: 100vh;
     color: var(--textColor);
     font-family: 'Montserrat', sans-serif;
@@ -196,9 +196,12 @@ aside hr {
 #topbar {
     background-color: var(--topbarColor);
     height: var(--topbarHeight);
-    width: 100%;
     justify-content: end;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: var(--asideWidth);
+    right: 0;
 }
 
 .btn-upgrade {
@@ -221,7 +224,8 @@ aside hr {
 #main-content {
     background-color: var(--mainSectionColor);
     overflow: scroll;
-    height: calc(100vh - var(--topbarHeight) - var(--playerHeight));
+    height: calc(100vh - var(--playerHeight));
+    padding-top: calc(var(--topbarHeight) + 30px);
 }
 
 .test {
