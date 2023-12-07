@@ -89,6 +89,12 @@ a {
     text-decoration: none;
 }
 
+/********************************************************
+            HOVER
+********************************************************/
+
+
+
 /* SECTION ASIDE ***************************************/
 
 aside {
@@ -265,6 +271,25 @@ aside hr {
     padding-bottom: 30px;
     margin-inline: 5%;
 }
+
+/* ACTIVE UNDERLINE */
+
+.main-nav-active {
+    position: relative;
+}
+
+.main-nav-active::after {
+    content: " ";
+    width: 30%;
+    height: 2px;
+    background: var(--accentColor);
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* ALBUMS */
 
 .album-row {
     gap: 20px;
