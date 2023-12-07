@@ -46,7 +46,7 @@
 
     aside {
         width: var(--asideWidthXS);
-        padding-block: 5px;
+        padding-block: 10px;
     }
 
     aside figure {
@@ -58,6 +58,11 @@
         margin: 0 auto;
     }
 
+    #side-menu svg {
+        width: 30px;
+        margin-right: 0;
+    }
+
     li:has(> a.active-text) {
         border-left: 2px solid var(--accentColor);
     }
@@ -66,7 +71,11 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        gap: 20px;
+    }
+
+    .btn-download {
+        width: 20px;
     }
 
     .btn-download svg {
