@@ -105,8 +105,12 @@ a {
     fill: var(--textColorHover);
 }
 
-.text-hover:hover span {
+#playlist-menu .text-hover:hover span {
     background-color: var(--textColorHover);
+}
+
+.btn-upgrade:hover {
+    scale: 1.1;
 }
 
 
