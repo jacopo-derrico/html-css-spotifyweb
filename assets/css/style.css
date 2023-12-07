@@ -30,10 +30,13 @@ img {
     width: 100%;
 }
 
+#home {
+    height: calc(100vh - var(--playerHeight));
+}
+
 #main {
     /* full width - aside width */
     width: calc(100vw - var(--asideWidth));
-    height: calc(100vh - var(--playerHeight));
 }
 
 /********************************************************
@@ -86,11 +89,9 @@ a {
 aside {
     background-color: var(--asideColor);
     width: var(--asideWidth);
-    height: calc(100vh - var(--playerHeight));
-    padding-block: 20px;
     flex-direction: column;
-    justify-content: space-between;
     overflow: hidden;
+    padding-top: 20px;
 }
 
 aside figure {
@@ -99,6 +100,11 @@ aside figure {
 
 aside img {
     width: 60%;
+}
+
+.aside-top {
+    height: 100%;
+    border: 1px solid red;
 }
 
 #side-menu svg {
@@ -124,8 +130,21 @@ li>.active-text {
 }
 
 #playlist-menu {
-    margin-top: 30px;
+    margin-block: 25px;
+    height: 50%;
+}
+
+#playlist-menu ul {
+    height: 80%;
     overflow: scroll;
+    border: 1px solid red;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#playlist-menu li {
+    text-transform: capitalize;
+    font-size: 12px;
 }
 
 #playlist-menu h4 {
@@ -153,10 +172,11 @@ li>.active-text {
     margin-right: 10px;
 }
 
-#playlist-menu li {
-    margin-block: 15px;
-    text-transform: capitalize;
-    font-size: 12px;
+.aside-bottom {
+    border: 1px solid red;
+    height: 80px;
+    /* padding-bottom: 20px; */
+    background-color: var(--asideColor);
 }
 
 .btn-download {
@@ -228,7 +248,8 @@ aside hr {
 #main-content {
     background-color: var(--mainSectionColor);
     overflow: scroll;
-    height: calc(100vh - var(--playerHeight));
+    height: 100%;
+    /* height: calc(100vh - var(--playerHeight)); */
     padding-top: calc(var(--topbarHeight) + 30px);
 }
 
@@ -290,6 +311,10 @@ aside hr {
 #player {
     background-color: var(--playerColor);
     height: var(--playerHeight);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 /* !SECTION PLAYER END */
