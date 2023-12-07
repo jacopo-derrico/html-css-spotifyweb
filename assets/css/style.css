@@ -12,6 +12,7 @@
     --mainSectionColor: #141922;
     --playerColor: #282828;
     --accentColor: #B9FF34;
+    --activeIcon: #fff;
 
     --asideWidth: 220px;
     --asideWidthXS: 50px;
@@ -63,6 +64,10 @@ img {
     color: var(--textColorActive);
 }
 
+.active-icon {
+    color: var(--activeIcon);
+}
+
 .btn {
     border: none;
 }
@@ -104,7 +109,6 @@ aside img {
 
 .aside-top {
     height: 100%;
-    border: 1px solid red;
 }
 
 #side-menu svg {
@@ -137,7 +141,6 @@ li>.active-text {
 #playlist-menu ul {
     height: 80%;
     overflow: scroll;
-    border: 1px solid red;
     flex-direction: column;
     gap: 10px;
 }
@@ -173,7 +176,6 @@ li>.active-text {
 }
 
 .aside-bottom {
-    border: 1px solid red;
     height: 80px;
     /* padding-bottom: 20px; */
     background-color: var(--asideColor);
@@ -315,6 +317,114 @@ aside hr {
     bottom: 0;
     left: 0;
     right: 0;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+#player .player-left-side,
+#player .player-right-side {
+    width: 20%;
+    align-items: center;
+}
+
+#player .player-right-side,
+#player .song-actions i {
+    scale: 0.8;
+}
+
+/* PLAYER LEFT SIDE */
+
+#player .player-left-side {
+    gap: 20%;
+    justify-content: flex-start;
+}
+
+.player-left-side .song-preview {
+    gap: 10px;
+    align-items: center;
+}
+
+.player-left-side .song-preview img {
+    width: 40px;
+}
+
+.player-left-side .song-actions {
+    gap: 20px;
+}
+
+/* PLAYER CENTER */
+
+#player .player-center {
+    width: 60%;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+#player .player-center .player-control {
+    gap: 40px;
+}
+
+#player .player-center .player-control .fa-circle-play {
+    scale: 1.8;
+}
+
+#player .player-center .player-time {
+    font-size: 10px;
+    font-weight: 600;
+    align-items: center;
+    gap: 20px;
+}
+
+#player .player-center .player-time span {
+    color: var(--textColorActive);
+}
+
+.time-progress-bar {
+    position: relative;
+}
+
+.time-progress-bar .total-time {
+    background-color: var(--textColor);
+    width: 30vw;
+    height: 4px;
+}
+
+.time-progress-bar .actual-time {
+    background-color: var(--activeIcon);
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 75%;
+}
+
+/* PLAYER RIGHT SIDE */
+
+#player .player-right-side {
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+#player .player-right-side .volume-bar {
+    position: relative;
+}
+
+.volume-bar .max-volume {
+    background-color: var(--textColor);
+    width: 70px;
+    height: 4px;
+}
+
+.volume-bar .actual-volume {
+    background-color: var(--activeIcon);
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 40%;
 }
 
 /* !SECTION PLAYER END */

@@ -6,15 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify - Web</title>
 
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+
+    <!-- FONTAWESOME -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.css'
+        integrity='sha512-tx5+1LWHez1QiaXlAyDwzdBTfDjX07GMapQoFTS74wkcPMsI3So0KYmFe6EHZjI8+eSG0ljBlAQc3PQ5BTaZtQ=='
+        crossorigin='anonymous' />
     <!-- STYLESHEET LINK -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- MEDIA QUERY LINK -->
     <link rel="stylesheet" href="./assets/css/media-query.css">
 
-    <!-- GOOGLE FONT -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
 
 </head>
 
@@ -210,15 +215,45 @@
 
         <!-- SECTION PLAYER ---------------------------------------------------------------->
 
-        <div id="player" class="flex-container">
-            <div>
-
+        <div id="player" class="flex-container pad-inline">
+            <div class="player-left-side flex-container">
+                <figure class="flex-container song-preview">
+                    <img src="./assets/img/sinister.jpeg" alt="album cover">
+                    <div>
+                        <h5 class="active-text">group</h5>
+                        <h6>brano nome</h6>
+                    </div>
+                </figure>
+                <div class="flex-container song-actions">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-folder"></i>
+                </div>
             </div>
-            <div>
-
+            <div class="player-center flex-container">
+                <div class="flex-container player-control">
+                    <i class="fa-solid fa-shuffle active-icon"></i>
+                    <i class="fa-solid fa-backward-step active-icon"></i>
+                    <i class="fa-regular fa-circle-play active-icon"></i>
+                    <i class="fa-solid fa-forward-step active-icon"></i>
+                    <i class="fa-solid fa-rotate-right active-icon"></i>
+                </div>
+                <div class="flex-container player-time">
+                    <span>1:16</span>
+                    <div class="time-progress-bar">
+                        <div class="total-time"></div>
+                        <div class="actual-time"></div>
+                    </div>
+                    <span>4:08</span>
+                </div>
             </div>
-            <div>
-
+            <div class="flex-container player-right-side">
+                <i class="fa-solid fa-list-ul active-icon"></i>
+                <i class="fa-solid fa-display active-icon"></i>
+                <i class="fa-solid fa-volume-high active-icon"></i>
+                <div class="volume-bar">
+                    <div class="actual-volume"></div>
+                    <div class="max-volume"></div>
+                </div>
             </div>
         </div>
 
