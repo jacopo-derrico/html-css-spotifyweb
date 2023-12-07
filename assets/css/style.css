@@ -91,7 +91,7 @@ a {
 }
 
 /********************************************************
-            HOVER
+            HOVER EFFECTS
 ********************************************************/
 
 .text-hover:hover {
@@ -113,6 +113,32 @@ a {
     scale: 1.1;
 }
 
+.album figure {
+    position: relative;
+}
+
+.album figure::after {
+    content: '\f144';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: regular;
+    font-size: 50px;
+    color: var(--textColorHover);
+    background-color: #0000006c;
+    padding: calc(50% - 25px);
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.album figure:hover::after {
+    display: block;
+}
+
+#most-popular .album figure::after {
+    border-radius: 50%;
+}
 
 /* SECTION ASIDE ***************************************/
 
@@ -387,6 +413,10 @@ aside hr {
 .player-left-side .song-preview {
     gap: 10px;
     align-items: center;
+}
+
+.player-left-side .song-preview h5 {
+    color: var(--textColorHover);
 }
 
 .player-left-side .song-preview img {
