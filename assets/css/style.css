@@ -6,7 +6,8 @@
 
 :root {
     --textColor: rgba(255, 255, 255, 0.544);
-    --textColorActive: #fff;
+    --textColorActive: #ffffffc0;
+    --textColorHover: #fff;
     --asideColor: #000;
     --topbarColor: rgba(9, 11, 18, 0.5);
     --mainSectionColor: #141922;
@@ -93,6 +94,20 @@ a {
             HOVER
 ********************************************************/
 
+.text-hover:hover {
+    color: var(--textColorHover);
+    cursor: pointer;
+}
+
+#side-menu li:hover svg {
+    width: 25px;
+    margin-right: 5px;
+    fill: var(--textColorHover);
+}
+
+.text-hover:hover span {
+    background-color: var(--textColorHover);
+}
 
 
 /* SECTION ASIDE ***************************************/
@@ -120,6 +135,7 @@ aside img {
 #side-menu svg {
     width: 25px;
     margin-right: 5px;
+    fill: var(--textColor);
 }
 
 #side-menu a {
@@ -158,7 +174,7 @@ li>.active-text {
 
 #playlist-menu h4 {
     text-transform: uppercase;
-    color: var(--textColorActive);
+    color: var(--textColorHover);
 }
 
 .btn-create-playlist {
@@ -183,7 +199,6 @@ li>.active-text {
 
 .aside-bottom {
     height: 80px;
-    /* padding-bottom: 20px; */
     background-color: var(--asideColor);
 }
 
@@ -207,7 +222,7 @@ aside hr {
 
 .btn-profile {
     background-color: var(--asideColor);
-    color: var(--textColorActive);
+    color: var(--textColorHover);
     font-size: 16px;
     font-weight: 800;
     align-items: center;
@@ -307,7 +322,7 @@ aside hr {
 
 .suggestion-row h2,
 .suggestion-row h4 {
-    color: var(--textColorActive);
+    color: var(--textColorHover);
 }
 
 #for-you h2 {
@@ -413,6 +428,8 @@ aside hr {
     background-color: var(--textColor);
     width: 30vw;
     height: 4px;
+    border-radius: 2px;
+
 }
 
 .time-progress-bar .actual-time {
@@ -422,6 +439,8 @@ aside hr {
     top: 0;
     bottom: 0;
     right: 75%;
+    border-radius: 2px 0 0 2px;
+
 }
 
 /* PLAYER RIGHT SIDE */
@@ -439,6 +458,7 @@ aside hr {
     background-color: var(--textColor);
     width: 70px;
     height: 4px;
+    border-radius: 2px;
 }
 
 .volume-bar .actual-volume {
@@ -448,6 +468,7 @@ aside hr {
     top: 0;
     bottom: 0;
     right: 40%;
+    border-radius: 2px 0 0 2px;
 }
 
 /* !SECTION PLAYER END */
