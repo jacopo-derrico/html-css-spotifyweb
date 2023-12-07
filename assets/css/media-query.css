@@ -86,4 +86,11 @@
         margin-right: 0px;
     }
 
+    /* TOPBAR *****************************************/
+
+
+    #topbar {
+        left: var(--asideWidthXS);
+    }
+
 }
