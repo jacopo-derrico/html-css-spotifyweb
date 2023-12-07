@@ -328,7 +328,7 @@ aside hr {
     align-items: center;
 }
 
-#player .player-right-side,
+#player .player-right-side i,
 #player .song-actions i {
     scale: 0.8;
 }
@@ -356,8 +356,6 @@ aside hr {
 /* PLAYER CENTER */
 
 #player .player-center {
-    width: 60%;
-    flex-grow: 1;
     flex-direction: column;
     align-items: center;
     gap: 15px;

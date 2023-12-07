@@ -219,12 +219,14 @@
             <div class="player-left-side flex-container">
                 <figure class="flex-container song-preview">
                     <img src="./assets/img/sinister.jpeg" alt="album cover">
-                    <div>
+                    <div class="hidden-xs">
                         <h5 class="active-text">group</h5>
                         <h6>brano nome</h6>
                     </div>
+                    <!-- wrap icon -->
+                    <i class="fa-solid fa-chevron-down visible-xs"></i>
                 </figure>
-                <div class="flex-container song-actions">
+                <div class="flex-container song-actions hidden-sm">
                     <i class="fa-regular fa-heart"></i>
                     <i class="fa-regular fa-folder"></i>
                 </div>
@@ -247,10 +249,13 @@
                 </div>
             </div>
             <div class="flex-container player-right-side">
-                <i class="fa-solid fa-list-ul active-icon"></i>
-                <i class="fa-solid fa-display active-icon"></i>
-                <i class="fa-solid fa-volume-high active-icon"></i>
-                <div class="volume-bar">
+                <!-- wrap icon -->
+                <i class="fa-solid fa-ellipsis-vertical visible-xs"></i>
+                <!-- action buttons -->
+                <i class="fa-solid fa-list-ul active-icon hidden-xs"></i>
+                <i class="fa-solid fa-display active-icon hidden-xs"></i>
+                <i class="fa-solid fa-volume-high active-icon hidden-xs"></i>
+                <div class="volume-bar hidden-sm">
                     <div class="actual-volume"></div>
                     <div class="max-volume"></div>
                 </div>

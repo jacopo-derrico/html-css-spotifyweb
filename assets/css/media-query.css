@@ -5,6 +5,18 @@
     .album {
         width: calc((100% / 4) - 20px + (20px / 4));
     }
+
+    /* PLAYER *****************************************/
+
+    #player .player-left-side,
+    #player .player-right-side {
+        width: 30%;
+    }
+
+    .player-left-side .song-actions {
+        gap: 10px;
+        flex-direction: column;
+    }
 }
 
 /* MOBILE SM 576px *****************************************/
@@ -14,6 +26,13 @@
     .album {
         width: calc((100% / 2) - 20px + (20px / 2));
     }
+
+    /* PLAYER *****************************************/
+
+    .hidden-sm {
+        display: none;
+    }
+
 }
 
 
@@ -88,9 +107,18 @@
 
     /* TOPBAR *****************************************/
 
-
     #topbar {
         left: var(--asideWidthXS);
     }
+
+    /* PLAYER *****************************************/
+
+    #player .player-right-side i {
+        scale: 1.2;
+    }
+
+    /* #player .song-actions i {
+        scale: 1;
+    } */
 
 }
