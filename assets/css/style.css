@@ -77,6 +77,18 @@ img {
     display: none;
 }
 
+.wrap-sm {
+    display: none;
+}
+
+.wrap-left-xs {
+    display: none;
+}
+
+.wrap-right-xs {
+    display: none;
+}
+
 /********************************************************
             TYPOGRAPHY
 ********************************************************/
@@ -176,7 +188,7 @@ a {
     display: none;
     position: absolute;
     top: 50%;
-    right: -10px;
+    left: 25%;
     transform: translate(-50%, -50%);
 }
 
@@ -198,7 +210,7 @@ a {
     display: none;
     position: absolute;
     top: 50%;
-    right: -10px;
+    right: 25%;
     transform: translate(-50%, -50%);
 }
 
@@ -372,7 +384,6 @@ aside hr {
     background-color: var(--mainSectionColor);
     overflow: scroll;
     height: 100%;
-    /* height: calc(100vh - var(--playerHeight)); */
     padding-top: calc(var(--topbarHeight) + 30px);
 }
 
@@ -525,24 +536,22 @@ aside hr {
     color: var(--textColorActive);
 }
 
-.time-progress-bar {
+/* .time-progress-bar {
     position: relative;
-}
+} */
 
-.time-progress-bar .total-time {
+.time-progress-bar {
     background-color: var(--textColor);
     width: 30vw;
     height: 4px;
     border-radius: 2px;
+    position: relative;
 }
 
 .time-progress-bar .actual-time {
     background-color: var(--activeIcon);
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 75%;
+    height: 4px;
+    width: 25%;
     border-radius: 2px 0 0 2px;
 }
 
@@ -557,7 +566,7 @@ aside hr {
     position: relative;
 }
 
-.volume-bar .max-volume {
+.volume-bar {
     background-color: var(--textColor);
     width: 70px;
     height: 4px;
@@ -566,11 +575,8 @@ aside hr {
 
 .volume-bar .actual-volume {
     background-color: var(--activeIcon);
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 40%;
+    width: 60%;
+    height: 4px;
     border-radius: 2px 0 0 2px;
 }
 

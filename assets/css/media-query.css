@@ -33,6 +33,40 @@
         display: none;
     }
 
+    /* HOVER */
+
+    #player .player-right-side .fa-volume-high:hover+.wrap-sm {
+        display: flex;
+    }
+
+    .wrap-sm {
+        position: absolute;
+        bottom: 90px;
+        right: 15px;
+        height: 90px;
+        width: 24px;
+        background-color: var(--playerColor);
+        border-radius: 3px;
+        padding: 10px 15px;
+        justify-content: center;
+    }
+
+    .wrap-sm .volume-bar {
+        background-color: var(--textColor);
+        width: 4px;
+        height: 70px;
+        border-radius: 2px;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .wrap-sm .volume-bar .actual-volume {
+        background-color: var(--activeIcon);
+        width: 4px;
+        height: 60%;
+        border-radius: 2px 0 0 2px;
+    }
+
 }
 
 
@@ -114,11 +148,72 @@
     /* PLAYER *****************************************/
 
     #player .player-right-side i {
-        scale: 1.2;
+        scale: 0.9;
     }
 
-    /* #player .song-actions i {
+    /* HOVER */
+
+    /* left side */
+
+    .player-left-side {
+        position: relative;
+    }
+
+    #player .player-left-side .fa-chevron-down:hover {
+        color: var(--activeIcon);
+    }
+
+    #player .player-left-side .fa-chevron-down {
         scale: 1;
-    } */
+        padding-right: 20px;
+    }
+
+    #player .player-left-side .fa-chevron-down:hover+.wrap-left-xs {
+        display: flex;
+    }
+
+    .wrap-left-xs {
+        position: absolute;
+        top: -90px;
+        left: 0;
+        width: 150px;
+        background-color: var(--playerColor);
+        border-radius: 3px;
+        padding: 10px;
+        flex-direction: column;
+        gap: 3px;
+    }
+
+    /* right side */
+
+    .player-right-side {
+        position: relative;
+    }
+
+    #player .player-right-side .fa-ellipsis-vertical {
+        scale: 1.2;
+        padding-right: 20px;
+    }
+
+    #player .player-right-side .fa-ellipsis-vertical:hover {
+        color: var(--activeIcon);
+    }
+
+    #player .player-right-side .fa-ellipsis-vertical:hover+.wrap-right-xs {
+        display: flex;
+    }
+
+    .wrap-right-xs {
+        position: absolute;
+        top: -80px;
+        right: 5px;
+        height: 40px;
+        width: 120px;
+        background-color: var(--playerColor);
+        border-radius: 3px;
+        padding: 10px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
 
 }
