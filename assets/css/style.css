@@ -140,6 +140,60 @@ a {
     border-radius: 50%;
 }
 
+.player-left-side .song-preview h6:hover {
+    color: var(--textColorHover);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#player .player-center .player-control .fa-circle-play:hover {
+    scale: 2;
+}
+
+.time-progress-bar .actual-time::after {
+    content: '';
+    background: var(--activeIcon);
+    width: 10px;
+    height: 10px;
+    box-shadow: inset -1px -1px 2px rgb(107, 107, 107);
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    transform: translate(-50%, -50%);
+}
+
+.time-progress-bar:hover .actual-time::after {
+    display: block;
+}
+
+.time-progress-bar:hover .actual-time {
+    background-color: var(--accentColor);
+}
+
+.volume-bar .actual-volume::after {
+    content: '';
+    background: var(--activeIcon);
+    width: 10px;
+    height: 10px;
+    box-shadow: inset -1px -1px 2px rgb(107, 107, 107);
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    transform: translate(-50%, -50%);
+}
+
+.volume-bar:hover .actual-volume::after {
+    display: block;
+}
+
+.volume-bar:hover .actual-volume {
+    background-color: var(--accentColor);
+}
+
 /* SECTION ASIDE ***************************************/
 
 aside {
@@ -463,7 +517,6 @@ aside hr {
     width: 30vw;
     height: 4px;
     border-radius: 2px;
-
 }
 
 .time-progress-bar .actual-time {
@@ -474,7 +527,6 @@ aside hr {
     bottom: 0;
     right: 75%;
     border-radius: 2px 0 0 2px;
-
 }
 
 /* PLAYER RIGHT SIDE */
